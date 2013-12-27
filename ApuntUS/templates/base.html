@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>ApuntUS</title>
+</head>
+<header>
+    {% block header %} {% endblock %}
+</header>
+<body>
+<nav>
+    <ul>
+        <li><a href="/main"> Inicio </a></li>
+        <li><a href="/aporteform"> Aportar un enlace </a></li>
+    </ul>
+</nav>
+<section class="contenido">
+    {% block content %} {% endblock %}
+</section>
+
+<footer>
+    <p>&copy; 2014, Alberto Rincón para Acceso Inteligente a la Información.</p>
+</footer>
+</body>
+</html>
