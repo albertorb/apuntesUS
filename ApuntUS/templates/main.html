@@ -4,8 +4,36 @@
 {% endblock %}
 
 {% block content %}
+    <script type="application/javascript">
+        function redirect() {
+            var sel = document.getElementById("SelectAsignaturas");
+            var id_asignatura = sel.options[sel.selectedIndex].value;
+            window.location = "http://127.0.0.1:8000/files/" + id_asignatura;
 
-    <select id="asignaturas">
+        }
+    </script>
+    <p><label>Elija una asignatura:</label></p>
+    <select id="SelectAsignaturas" onChange="redirect();">
+        <option label="---------"></option>
+        {% for elem in asignaturas %}
+            <option label={{ elem.nombre }} value={{ elem.id }}>
 
+        {% endfor %}
     </select>
+
+    <p><label>Lo más visto:</label></p>
+    <table border="1">
+        <tr>
+            <th>Archivo</th>
+            <th>Asignatura</th>
+        </tr>
+        {% for x in apuntes %}
+            <tr>
+                <td><a href={{ x.enlace }}>{{ x.nombre }} </a></td>
+                <td>{{ x.asig.nombre }}</td>
+            </tr>
+
+        {% endfor %}
+    </table>
 {% endblock %}
+

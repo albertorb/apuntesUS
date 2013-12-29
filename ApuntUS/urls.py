@@ -1,5 +1,4 @@
 from django.conf.urls import patterns, include, url
-
 from django.contrib import admin
 admin.autodiscover()
 
@@ -10,4 +9,6 @@ urlpatterns = patterns('',
 
     url(r'^admin/', include(admin.site.urls)),
     url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
+    url(r'^apuntus', 'ApuntUS.views.main'),
+    url(r'^files/(?P<id_asignatura>\d+)$', 'ApuntUS.views.apuntes_por_asignatura'),
 )
