@@ -9,6 +9,8 @@ urlpatterns = patterns('',
 
     url(r'^admin/', include(admin.site.urls)),
     url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
-    url(r'^apuntus', 'ApuntUS.views.main'),
+    url(r'^apuntus/', 'ApuntUS.views.main'),
     url(r'^files/(?P<id_asignatura>\d+)$', 'ApuntUS.views.apuntes_por_asignatura'),
+    url(r'^aporteform/', 'ApuntUS.views.apunte'),
+    url(r'^leaving/(?P<id_apunte>\d+)$', 'ApuntUS.views.leaving'),
 )

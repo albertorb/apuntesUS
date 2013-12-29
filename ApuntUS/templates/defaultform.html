@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block header %}
+    <h1>Aportar un enlace</h1>
+{% endblock %}
+{% block content %}
+    <form id='formu' method='post' action="">{% csrf_token %}
+        {{ formulario.as_p }}
+        <p><input type="submit" value="Confirmar"/></p>
+    </form>
+{% endblock %}

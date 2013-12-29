@@ -11,7 +11,7 @@
         </tr>
         {% for x in apuntes %}
             <tr>
-                <td><a href={{ x.enlace }}>{{ x.nombre }} </a></td>
+                <td><a id={{ x.id }} href="{% url 'ApuntUS.views.leaving' x.id %}">{{ x.nombre }} </a></td>
                 <td>{{ x.descripcion }}</td>
             </tr>
         {% endfor %}
