@@ -29,7 +29,7 @@
         </tr>
         {% for x in apuntes %}
             <tr>
-                <td><a href={{ x.enlace }}>{{ x.nombre }} </a></td>
+                <td><a href={% url 'ApuntUS.views.leaving' x.id %}>{{ x.nombre }} </a></td>
                 <td>{{ x.asig.nombre }}</td>
             </tr>
 

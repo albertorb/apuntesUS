@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69493b6f-fde3-49a4-8379-2df42d2c5056" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ApuntUS/templates/defaultform.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ApuntUS/templates/leaving.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dbapuntus.sqlite3" afterPath="$PROJECT_DIR$/dbapuntus.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApuntUS/templates/files.html" afterPath="$PROJECT_DIR$/ApuntUS/templates/files.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApuntUS/forms.py" afterPath="$PROJECT_DIR$/ApuntUS/forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApuntUS/urls.py" afterPath="$PROJECT_DIR$/ApuntUS/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApuntUS/views.py" afterPath="$PROJECT_DIR$/ApuntUS/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApuntUS/templates/main.html" afterPath="$PROJECT_DIR$/ApuntUS/templates/main.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ApuntUS.iws" />
@@ -86,7 +81,7 @@
       <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ApuntUS/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="43" selection-start="1614" selection-end="1614" vertical-scroll-proportion="0.0" vertical-offset="398" max-vertical-offset="795">
+            <state line="48" column="43" selection-start="1649" selection-end="1649" vertical-scroll-proportion="0.0" vertical-offset="428" max-vertical-offset="825">
               <folding>
                 <element signature="e#40#68#0" expanded="true" />
               </folding>
@@ -94,10 +89,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="main.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ApuntUS/templates/main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="58" selection-start="371" selection-end="371" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="675">
+            <state line="31" column="66" selection-start="972" selection-end="972" vertical-scroll-proportion="0.74585634" vertical-offset="195" max-vertical-offset="675">
               <folding />
             </state>
           </provider>
@@ -106,16 +101,16 @@
       <file leaf-file-name="defaultform.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ApuntUS/templates/defaultform.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="11" selection-start="110" selection-end="269" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="225">
+            <state line="8" column="11" selection-start="114" selection-end="270" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="225">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="files.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="files.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ApuntUS/templates/files.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="72" selection-start="360" selection-end="360" vertical-scroll-proportion="0.53867406" vertical-offset="0" max-vertical-offset="362">
+            <state line="13" column="81" selection-start="331" selection-end="369" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="360">
               <folding />
             </state>
           </provider>
@@ -124,7 +119,7 @@
       <file leaf-file-name="leaving.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ApuntUS/templates/leaving.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="4" selection-start="34" selection-end="34" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="255">
+            <state line="3" column="4" selection-start="34" selection-end="34" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="270">
               <folding />
             </state>
           </provider>
@@ -161,7 +156,6 @@
         <option value="$PROJECT_DIR$/ApuntUS/models.py" />
         <option value="$PROJECT_DIR$/ApuntUS/templates/base.html" />
         <option value="$PROJECT_DIR$/ApuntUS/templates/apuntes.html" />
-        <option value="$PROJECT_DIR$/ApuntUS/templates/main.html" />
         <option value="$PROJECT_DIR$/ApuntUS/templates/apunteform.html" />
         <option value="$PROJECT_DIR$/ApuntUS/templates/defaultform.html" />
         <option value="$PROJECT_DIR$/ApuntUS/forms.py" />
@@ -169,6 +163,7 @@
         <option value="$PROJECT_DIR$/ApuntUS/templates/leaving.html" />
         <option value="$PROJECT_DIR$/ApuntUS/views.py" />
         <option value="$PROJECT_DIR$/ApuntUS/templates/files.html" />
+        <option value="$PROJECT_DIR$/ApuntUS/templates/main.html" />
       </list>
     </option>
   </component>
@@ -521,7 +516,11 @@
       <created>1388338448494</created>
       <updated>1388338448494</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Formulario operativo. Funciona redireccion a enlaces a la vez que puntua.">
+      <created>1388348811605</created>
+      <updated>1388348811605</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -560,7 +559,8 @@
     <MESSAGE value="modelo de datos operativo, con ejemplos creados de cada tabla.&#10;También se añade el base.html e inicio.html, este ultimo sin completar." />
     <MESSAGE value="Resuelto error de integridad en modelo de datos. Base de datos con ejemplos." />
     <MESSAGE value="apuntus/ y files/ operativos mostrando datos correctamente." />
-    <option name="LAST_COMMIT_MESSAGE" value="apuntus/ y files/ operativos mostrando datos correctamente." />
+    <MESSAGE value="Formulario operativo. Funciona redireccion a enlaces a la vez que puntua." />
+    <option name="LAST_COMMIT_MESSAGE" value="Formulario operativo. Funciona redireccion a enlaces a la vez que puntua." />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -643,16 +643,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ApuntUS/templates/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="58" selection-start="371" selection-end="371" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="675">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ApuntUS/templates/defaultform.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="11" selection-start="110" selection-end="269" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="225">
+        <state line="8" column="11" selection-start="114" selection-end="270" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="225">
           <folding />
         </state>
       </provider>
@@ -666,7 +659,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ApuntUS/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="43" selection-start="1614" selection-end="1614" vertical-scroll-proportion="0.0" vertical-offset="398" max-vertical-offset="795">
+        <state line="48" column="43" selection-start="1649" selection-end="1649" vertical-scroll-proportion="0.0" vertical-offset="428" max-vertical-offset="825">
           <folding>
             <element signature="e#40#68#0" expanded="true" />
           </folding>
@@ -684,7 +677,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ApuntUS/templates/files.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="72" selection-start="360" selection-end="360" vertical-scroll-proportion="0.53867406" vertical-offset="0" max-vertical-offset="362">
+        <state line="13" column="81" selection-start="331" selection-end="369" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="360">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ApuntUS/templates/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="66" selection-start="972" selection-end="972" vertical-scroll-proportion="0.74585634" vertical-offset="195" max-vertical-offset="675">
           <folding />
         </state>
       </provider>
