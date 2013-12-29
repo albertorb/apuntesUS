@@ -8,7 +8,7 @@ from django.db import models
 class Asignatura(models.Model):
     nombre = models.TextField()
 
-    def __unicode__(self):
+    def __str__(self):
         return str(self.nombre)
 
 
@@ -16,9 +16,9 @@ class Apunte(models.Model):
     nombre = models.TextField(verbose_name='nombre')
     descripcion = models.TextField(verbose_name='descripción')
     enlace = models.URLField(verbose_name='enlace')
-    asig = models.OneToOneField(Asignatura, verbose_name='Asignatura')
+    asig = models.ForeignKey(Asignatura, unique=False)
 
-    def __unicode__(self):
+    def __str__(self):
         return self.nombre + ' (' + self.asig.nombre + ')'
 
 
@@ -26,5 +26,5 @@ class Puntuacion(models.Model):
     apunte = models.ForeignKey(Apunte, unique=True)
     puntos = models.IntegerField()
 
-    def __unicode__(self):
+    def __str__(self):
         return str(self.puntos)
